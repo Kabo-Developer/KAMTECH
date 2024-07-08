@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Cards</title>
+    <style>
+        .service-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        .service-container {
+            height: 40em;
+            width: 80em;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            margin: 5px 15px;
+            border: 2px #f2f2f2 dotted;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service-image {
+            width: 15em;
+            height: 10em;
+        }
+
+        .card {
+            perspective: 1000px;
+            margin: 20px;
+            margin-top: -15em;
+            flex: 1 1 calc(25% - 40px);
+            box-sizing: border-box;
+            min-width: 250px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        @media (max-width: 400px) {
+            .service-container {
+                height: auto;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .card {
+                flex: 1 1 100%;
+                min-width: 100%;
+                margin: 10px 0;
+            }
+
+            .service-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .service-text {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="service">
+    <div class="service-container">
+        <div class="service-text">
+            <h2 id="service">Service</h2>
+            <div class="divider"></div>
+            <br />
+            <p class="service-p">Step into our world of photography where we transform fleeting moments into
+                everlasting treasures, ensuring your events are remembered with warmth and joy.</p>
+        </div>
+        <br />
+        <div class="service-card">
+            <div class="card">
+                <h2>Web Development</h2>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/Free Vector _ 3d isometric e-commerce concept, online store.jpeg"
+                             class="service-image" alt="image">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/SEO_2.jpeg"
+                             class="service-image" alt="image">
+                    </div>
+                </div>
+                <p>
+                    We provide custom website development,
+                    responsive web design, and e-commerce solutions tailored to meet the
+                    unique needs of each client.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>SEO</h2>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/Chat Bot_2.jpeg" class="service-image" alt="image">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/Chat Bot_5.jpeg" class="service-image" alt="image">
+                    </div>
+                </div>
+                <p>
+                    Step into our world of photography where we transform fleeting moments into
+                    everlasting treasures, ensuring your events are remembered with warmth and
+                    joy.</p>
+            </div>
+
+            <div class="card">
+                <h2>Website Development</h2>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/SEO_5.jpeg" class="service-image" alt="image">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/digital marketing.jpeg" class="service-image" alt="extra image">
+                    </div>
+                </div>
+                <p>
+                    Step into our world of photography where we transform fleeting moments into
+                    everlasting treasures, ensuring your events are remembered with warmth and
+                    joy.</p>
+            </div>
+
+            <div class="card">
+                <h2>Chat Bot</h2>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/Domain And Hosting.jpeg" class="service-image" alt="image">
+                    </div>
+                    <div class="card-back">
+                        <img src="images/Chat Bot_10.jpeg" class="service-image" alt="extra image">
+                    </div>
+                </div>
+                <p>
+                    Step into our world of photography where we transform fleeting moments into
+                    everlasting treasures, ensuring your events are remembered with warmth and
+                    joy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const cards = document.querySelectorAll('.card');
+        setInterval(() => {
+            cards.forEach(card => {
+                card.classList.toggle('flipped');
+            });
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+</script>
+
+</body>
+</html>

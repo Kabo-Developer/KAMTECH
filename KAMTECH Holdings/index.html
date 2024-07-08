@@ -1,0 +1,255 @@
+<!Doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>home-page</title>
+
+    <!--  API's -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Adding External CSS Files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="mobile-container">
+        <nav>
+            <div class="logo"><img src="images/" alt="company logo"></div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Company -->
+    <div class="about">
+        <div class="about-container">
+            <img src="images/" alt="background image">
+            <div class="about-text">
+                <h2 id="about">About</h2>
+                <div class="divider"></div>
+                <p class="about-p">At KAM-TECH, <br />
+                    we are dedicated to delivering top-notch IT solutions tailored to your business needs. <br />
+                    Our comprehensive range of services ensures that your online presence is not only visually stunning
+                    but also highly functional and easily discoverable.
+                    Partner with us to take your business to the next level.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <!-- <div class="service">
+        <div class="service-container">
+            <div class="service-text">
+                <h2 id="service">Service</h2>
+                <div class="divider"></div>
+                <br />
+                <p class="service-p">Step into our world of photography where we transform fleeting moments into
+                    everlasting treasures, ensuring your events are remembered with warmth and
+                    joy.</p>
+            </div>
+            <br />
+            <div class="service-card">
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <img src="images/Free Vector _ 3d isometric e-commerce concept, online store.jpeg"
+                        class="service-image" alt="image">
+                    <p>
+                        We provide custom website development,
+                        responsive web design, and e-commerce solutions tailored to meet the
+                        unique needs of each client.</p>
+                </div>
+
+                <div class="card">
+                    <h2>SEO</h2>
+                    <img src="images/SEO_1.jpeg" class="service-image" alt="image">
+                    <p>
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Chat Bot</h2>
+                    <img src="images/Chat Bot_2.jpeg" class="service-image" alt="image">
+
+                    <p>
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Webside Hosting</h2>
+                    <img src="images/digital marketing.jpeg" class="service-image" alt="image">
+                    <p>
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="service">
+        <div class="service-container">
+            <div class="service-text">
+                <h2 id="service">Service</h2>
+                <div class="divider"></div>
+                <br />
+                <p class="service-p">Step into our world of photography where we transform fleeting moments into
+                    everlasting treasures, ensuring your events are remembered with warmth and joy.</p>
+            </div>
+            <br />
+            <div class="service-card">
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Free Vector _ 3d isometric e-commerce concept, online store.jpeg"
+                                class="service-image" alt="image">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/SEO_2.jpeg"
+                                class="service-image" alt="image">
+                        </div>
+                    </div>
+                    <p>
+                        We provide custom website development,
+                        responsive web design, and e-commerce solutions tailored to meet the
+                        unique needs of each client.
+                    </p>
+                </div>
+    
+                <div class="card">
+                    <h2>SEO</h2>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Chat Bot_2.jpeg" class="service-image" alt="image">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Chat Bot_5.jpeg" class="service-image" alt="image">
+                        </div>
+                    </div>
+                    <p>
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+    
+                <div class="card">
+                    <h2>Website Development</h2>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/SEO_5.jpeg" class="service-image" alt="image">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/digital marketing.jpeg" class="service-image" alt="extra image">
+                        </div>
+                    </div>
+                    <p>
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+    
+                <div class="card">
+                    <h2>Chat Bot</h2>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Domain And Hosting.jpeg" class="service-image" alt="image">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Chat Bot_10.jpeg" class="service-image" alt="extra image">
+                        </div>
+                    </div>
+                    <p class="paragraph-service">
+                        Step into our world of photography where we transform fleeting moments into
+                        everlasting treasures, ensuring your events are remembered with warmth and
+                        joy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+        <div class="contact-container">
+            <div class="container">
+                <div style="text-align:center">
+                    <h2 id="contact">Contact Us</h2>
+                    <div class="divider"></div>
+                    <!-- <p>Swing by for a cup of coffee, or leave us a message:</p> -->
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <!-- <img src="/w3images/map.jpg" style="width:100%"> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14318.913137968339!2d28.033729067382826!3d-26.205515800073897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e85308ee841%3A0xefc23a638720e3a0!2sEnd%20St%20%26%20Main%20St%2C%20City%20and%20Suburban%2C%20Johannesburg%2C%202094%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1719177855168!5m2!1sen!2suk"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="column">
+                        <form action="/action_page.php">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="fullname" placeholder="Jacob Austin">
+                            <label for="lname">Phone Number</label>
+                            <input type="phone" id="lname" name="lastname" placeholder="(+27) 123 456 7890">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="country" placeholder="country" disabled >Select Country</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:170px"></textarea>
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">KAM-TECH &copy; All Rights Reserved</p>
+    </footer>
+
+    <script>
+        //HAmburger
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+            } else {
+                menu.classList.add('show');
+            }
+        }
+
+        // Flip Cards
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const cards = document.querySelectorAll('.card');
+            setInterval(() => {
+                cards.forEach(card => {
+                    card.classList.toggle('flipped');
+                });
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+
+    </script>
+</body>
+
+</html>

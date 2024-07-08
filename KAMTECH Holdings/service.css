@@ -1,0 +1,122 @@
+
+.service {
+  height: 100%;
+  width: 100%;
+  /* margin: 5px 5px; */
+  display: flex;
+}
+
+.service-container {
+  height: 40em;
+  width: 80em;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px 15px;
+  border: 2px #f2f2 dotted;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-container h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30em;
+}
+
+.service-image {
+  width: 15em;
+  height: 10em;
+}
+
+.card {
+  perspective: 1000px;
+  margin: 20px;
+  flex: 1 1 calc(25% - 40px);
+  box-sizing: border-box;
+  min-width: 250px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/** Media Screen for Smartphones **/
+@media screen and (width: 400px) {
+
+  /** Service **/
+  /* .service {
+    height: 20vh;
+    width: 100%;
+    margin: 3px 2px;
+    display: flex;
+  } */
+  .service-container {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+  /* .service-container {
+    height: 100em;
+    width: 95em;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+  /* .service-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65em;
+  } */
+
+  /* .card{
+    margin-top: -10em;
+  } */
+
+  .card {
+    flex: 1 1 100%;
+    min-width: 100%;
+    margin: 10px 0;
+}
+
+  /* .service-image {
+    height: 18em;
+    width: 15em;
+  } */
+
+  .service-image {
+    width: 100%;
+    height: auto;
+}
+
+}
